@@ -1,0 +1,47 @@
+$hover_color: #40a9ff;
+.header {
+    background-color: #eee;
+    .l {
+        font-size: 14px;
+        line-height: 1;
+        span {
+            padding: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    }
+    .r {
+        // padding: 10px;
+        line-height: 34px;
+        .nav_item {
+            cursor: pointer;
+            text-align: center;
+            margin: 0 5px;
+        }
+        .nav_item:last-of-type {
+            margin-right: 0;
+        }
+        .nav_item:hover {
+            color: $hover_color;
+            border-bottom: 2px solid $hover_color;
+            box-sizing: border-box;
+        }
+        .nav_item:hover a {
+            color: $hover_color;
+        }
+        .nav_item.first-nav,
+        .nav_item.last-nav:hover {
+            border-bottom: none;
+        }
+        .kind,
+        .login {
+            background-color: transparent;
+            text-align: center;
+            line-height: 34px;
+        }
+    }
+}
+a.router-link {
+    color: rgba(0, 0, 0, .65);
+    display: inline-block !important;
+}
